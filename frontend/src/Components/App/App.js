@@ -8,6 +8,7 @@ import Items from '../Items/Items';
 import Account from '../Account/Account';
 import Logout from '../Logout/Logout';
 import ItemInterface from '../ItemInterface/ItemInterface';
+import Inventory from '../Inventory/Inventory';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route exact path='/myaccount' component={Account} />
             <Route exact path='/logout' component={Logout} />
             <Route exact path='/item' component={ItemInterface} />
+            <Route exact path='/inventory' component={Inventory} />
           </Switch>
         </div>
       </Router>
